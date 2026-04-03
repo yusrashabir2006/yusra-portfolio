@@ -1,0 +1,81 @@
+.profile-img {
+    width: 150px;       /* Control the size here */
+    height: 150px;
+    object-fit: cover;  /* Prevents the image from stretching */
+    border-radius: 50%; /* Makes it a circle */
+    margin-bottom: 15px;
+}
+body{
+    background-color:rgb(13, 13, 78);
+    color: rgb(14, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    text-align: center;      /* Centers text inside the box */
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 400px;        /* Keeps the content from spreading too wide */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+Gemini said
+This is a great start! The dark blue background makes the white card pop, but to give it a truly premium, designer-level look, we need to focus on typography, spacing, and button styling.
+
+Here is how to polish the design:
+
+1. Fix the Layout (Center the Card)
+Currently, the card is stuck to the left. Let's center it perfectly in the middle of that dark blue background.
+
+CSS
+body {
+    background-color: #050a30; /* Your dark blue */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+2. Improve Typography & Spacing
+The text is a bit crowded. Let’s add hierarchy (making some text bold and others light) and increase the line-height for readability.
+
+CSS
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 30px; /* Softer corners */
+    text-align: center;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #050a30;
+
+}
+
+
+.intro-text {
+    font-size: 0.95rem;
+    line-height: 1.6; /* Adds breathing room between lines */
+    color: #555;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    
+
+ 
+}
